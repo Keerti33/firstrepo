@@ -1,0 +1,31 @@
+.banner-image{
+    margin-top: 0px;
+    height: 857px;
+    width: 100%;
+    position: relative;
+}
+
+.social-media{
+    position: absolute;
+    top: 450px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    width: 38px;
+}
+.patents {
+    display : flex;
+    justify-content: center;
+    position : absolute;
+    left: 150px;
+    top: 1050px;
+    
+
+
+}
+.patents div{
+    width: 300px
+}
+.patents img{
+    width: 100%;
+}
