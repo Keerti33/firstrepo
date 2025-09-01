@@ -13,12 +13,17 @@
     gap: 10px;
     width: 38px;
 }
+.middle-header{
+    position: relative;
+}
 .patents {
     display : flex;
     justify-content: center;
-    position : absolute;
+    height: 230px;
+    position: absolute;
     left: 150px;
-    top: 1050px;
+    top:1050px
+    
     
 
 
@@ -28,4 +33,14 @@
 }
 .patents img{
     width: 100%;
+}
+.grid-photo{
+    margin-top: 200px;
+    margin-left: 100px;
+margin-right: 100px;
+    
+}
+.writing{
+
+margin-right: 100px;
 }

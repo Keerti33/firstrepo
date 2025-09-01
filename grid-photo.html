@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Photo Gallery</title>
+        <style>
+        .container {
+            display: flex;
+            height: 800px;
+        }
+        .left{
+            width: 350px;
+            
+            margin-right: 10px;
+        }
+        .center {
+            flex : 1;
+            
+            margin-right: 10px;
+        }
+        .right {
+            width: 350px;
+            
+        }
+        .Left1{
+            height: 330px;
+            
+            margin-bottom: 10px;
+        }
+        .Left2{
+            height: 460px;
+            
+        }
+        .Center1 {
+            height: 460px;
+            
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .Center2 {
+            height: 330px;
+            
+            display: flex;
+        }
+        .right1 {
+            height: 520px;
+
+            margin-bottom: 10px;
+        }
+        .right2 {
+            height: 270px;
+            
+        }
+        .img1,
+        
+        
+        .img4,
+        .img5,
+        .img6,
+        .img7,
+        .img8 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
+        .img3 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .center1-1 {
+            flex : 1;
+            
+            margin-right: 10px;
+        }
+        .center1-2 {
+            flex: 1;
+            
+        }
+        .center2-1 {
+            width: 60%;
+            
+            
+            margin-right: 10px;
+        }
+        .center2-2 {
+            width: 40%;
+            
+        }
+      
+        
+
+
+
+           
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class = "left">
+                <div class = "Left1">
+                    <img class ="img1" src="images/grid1.jpg">
+                </div>
+                <div class = "Left2">
+                    <img class ="img2" src="images/grid5.jpg">
+                </div>
+            </div>
+            <div class = "center">
+                <div class = "Center1">
+                    <div class = "center1-1">
+                        <img class ="img3" src="images/grid2.png">
+                    </div>
+                    <div class = "center1-2">
+                        <img class ="img4" src="images/grid3.png">
+                    </div>
+                </div>
+                <div class = "Center2">
+                    <div class="center2-1">
+                        <img class ="img5" src="images/grid6.jpg">
+                    </div>
+                    <div class="center2-2">
+                        <img class ="img6" src="images/grid7.png">
+                    </div>
+                </div>
+            </div>
+            <div class = "right">
+                <div class = "right1">
+                    <img class ="img7" src="images/grid4.jpg">
+                </div>
+                <div class = "right2">
+                    <img class ="img8" src="images/grid8.png">
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
+

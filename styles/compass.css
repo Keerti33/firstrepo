@@ -1,0 +1,51 @@
+   .top-compass{
+                
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                
+            }
+            .box{
+                padding-right: 20px;
+                width: 300px;
+                border-right : 2px solid #C4C4C4;
+                
+
+            }
+            .box2{
+                  padding-right: 20px;
+                width: 300px;
+            }
+            .image{
+                   width: 200px;
+               margin-left: 50px;
+            }
+            .im{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            
+            }
+            .text{
+                display: flex;
+                margin-top: 20px;
+                font-size: 16px;
+                justify-content: center;
+
+            }
+            .hashtag{
+                font-size: 55px;
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                font-weight: 900;
+                text-shadow: 2px 2px 5px  yellow;
+
+            }
+            .bottom-compass{
+                display: flex;
+                justify-content: center;
+                font-size: 40px;
+                margin-top: 40px;
+
+            }

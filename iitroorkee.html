@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <style>
+         .container {
+            display: flex;
+            height: 800px;
+        }
+        .left{
+            width: 350px;
+            
+            margin-right: 10px;
+        }
+        .center {
+            flex : 1;
+            
+            margin-right: 10px;
+        }
+        .right {
+            width: 350px;
+            
+        }
+        .Left1{
+            height: 330px;
+            
+            margin-bottom: 10px;
+        }
+        .Left2{
+            height: 460px;
+            
+        }
+        .Center1 {
+            height: 460px;
+            
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .Center2 {
+            height: 330px;
+            
+            display: flex;
+        }
+        .right1 {
+            height: 520px;
+
+            margin-bottom: 10px;
+        }
+        .right2 {
+            height: 270px;
+            
+        }
+        .img1,
+        
+        
+        .img4,
+        .img5,
+        .img6,
+        .img7,
+        .img8 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
+        .img3 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .center1-1 {
+            flex : 1;
+            
+            margin-right: 10px;
+        }
+        .center1-2 {
+            flex: 1;
+            
+        }
+        .center2-1 {
+            width: 60%;
+            
+            
+            margin-right: 10px;
+        }
+        .center2-2 {
+            width: 40%;
+            
+        }
+        .list{
+    
+color: white;
+font-size: 20px;
+padding-top: 70px;
+padding-left: 30px;
+}
+.list div {
+    margin-bottom: 40px;
+}
+   
+ .dot {
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%; /* makes it a circle */
+  display: inline-block;
+}
+.arrow-left {
+  width: 10px;
+  height: 10px;
+  border-left: 4px solid gray;
+  border-bottom: 4px solid gray;
+  transform: rotate(45deg);
+  margin-left: 10px;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid gray; /* Arrow color */
+}
+
+     .image-container {
+  position: relative;
+  width: 105px; /* or the size of your background image */
+  height: 200px;
+  
+}
+
+.bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  width: 105px; /* or the size of your background image */
+
+}
+
+.overlay-image {
+  position: absolute;
+  top: 20px;  /* adjust as needed */
+  left: 20px; /* adjust as needed */
+  width: 35px; /* or any size */
+  height: auto;
+  margin-left:15px; 
+  margin-top: 10px;
+  /* adjust as needed */
+  
+}    
+        
+        
+      
+        
+
+      </style>
+      <link rel="stylesheet" href ="styles/recentachive.css">
+      <link rel="stylesheet" href ="styles/compass.css">
+      <link rel="stylesheet" href ="styles/writing.css">
      <link rel="stylesheet"  href="styles/header.css">
       <link rel="stylesheet"  href="styles/middle.css">
     </head>
     <body >
-     <div >
+     
         <div class ="top-header">
             <div class="Right-section">
             <div>Saharanpur Campus</div>
@@ -16,16 +176,16 @@
             <div>Contact Us</div>
             </div>
             <div class="Left-section">
-              <div><img src="icons8-search-50.png"></div>
-              <div><img src="icons8-search-50.png"></div>
-              <div><img src="icons8-search-50.png"></div>
-              <div><img src="icons8-search-50.png"></div>
+              <div><img src="images/icons8-search-50.png"></div>
+              <div><img src="images/icons8-search-50.png"></div>
+              <div><img src="images/icons8-search-50.png"></div>
+              <div><img src="images/icons8-search-50.png"></div>
             </div>
             
         </div>
         <div class ="next-border-box">
             <div class="logo-section">
-                <img src="logo.png"  class="logo">
+                <img src="images/logo.png"  class="logo">
             </div>
             <div class="arrow-down">
                 <div>INSTITUTE&#9660;</div>
@@ -41,31 +201,625 @@
         </div>
         <div>
           <div class="middle-header" >
-          <img src="campus.jpg" class="banner-image" width="100%" height="400px">
+          <img src="images/campus.jpg" class="banner-image" width="100%" height="400px">
         </div>
          <div class ="social-media">
-          <img src="facebook.png">
+          <img src="images/facebook.png">
         </div>
         </div>
         <div class ="patents">
           <div>
-            <img src="Default1.png">
+            <img src="images/Default1.png">
           </div>
           <div>
-             <img src="Default2.png">
+             <img src="images/Default2.png">
           </div>
           <div>
-             <img src="Default3.png">
+             <img src="images/Default3.png">
           </div>
           <div>
-             <img src="Default4.png">
+             <img src="images/Default4.png">
           </div>
-          
         </div>
+        <div class = "grid-photo">
+             <div class="container">
+            <div class = "left">
+                <div class = "Left1">
+                    <img class ="img1" src="images/grid1.jpg">
+                </div>
+                <div class = "Left2">
+                    <img class ="img2" src="images/grid5.jpg">
+                </div>
+            </div>
+            <div class = "center">
+                <div class = "Center1">
+                    <div class = "center1-1">
+                        <img class ="img3" src="images/grid2.png">
+                    </div>
+                    <div class = "center1-2">
+                        <img class ="img4" src="images/grid3.png">
+                    </div>
+                </div>
+                <div class = "Center2">
+                    <div class="center2-1">
+                        <img class ="img5" src="images/grid6.jpg">
+                    </div>
+                    <div class="center2-2">
+                        <img class ="img6" src="images/grid7.png">
+                    </div>
+                </div>
+            </div>
+            <div class = "right">
+                <div class = "right1">
+                    <img class ="img7" src="images/grid4.jpg">
+                </div>
+                <div class = "right2">
+                    <img class ="img8" src="images/grid8.png">
+                </div>
+            </div>
+            
+        </div>
+
+        </div>
+        <div class = "writing">
+            <div class = "top">
+                <div class ="top-left">
+                    RECENTLY GRANTED PATENTS
+                </div>
+                <div  class ="top-right">
+                    VIEW ALL
+                </div>
+            </div>
+            <div class = "bottom">
+                
+                    <div class = "arrow">
+                        &#10094;
+                    </div>
+                    <div class = "bottom-left-right">
+                        <img  class="img1" src = "images/1b7f4f7720643b890312a97ed827193e26f82f56.png">
+                    </div>
+                
+                
+                  <div class = "bottom-right-left">
+                    <div style="font-size: 24px;
+                    margin-top: 50px;
+                    font-weight: 600;
+                    margin-bottom: 50px;
+                    ">
+                        REAL-TIME FOG REMOVAL SYSTEM AND ITS METHOD THEREOF
+                    </div>
+                    <div>
+                        <p style="
+                            text-align: justify;
+                            
+                            font-size: 18px;
+                            color : #232323;
+                            ">
+                        The present invention provides a visible and near-infrared band's deep learning and pixel sharing-based system and method for image and
+ video dehazing. It successfully restores hazy/foggy images with a wide range of haze/fog conditions. Unlike the prior art; the proposed
+ invention utilized a wide electromagnetic spectrum for imaging from 400nm to 1400nm wavelength and performed dehazing/ defogging in
+ the entire range (visible and NIR bands). For this task, a data-driven approach is developed to learn appropriate features from the input image
+ sequences. The spatial multiscale features are extracted using completely separable ID layers that allow  pipeline stage insertion to enhance...
+ </p>
+                    </div>
+                    <div class ="buttons">
+                        <button>READ MORE</button>
+                        <button>AVAILABLE FOR LICENSING</button>
+                    </div>
+                    
+                   
+                  <div class="arrow2">
+                  &#10095</div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class = "compass">
+            <div class = "top-compass">
+                <div class = "box">
+                <div class = "image">
+                    <img class ="im" src = "images/architecture-svgrepo-com 1.png">
+                </div>
+                <div class="text">
+                    NIRF RANK 1 IN ARCHITECTURE
+
+                </div>
+                <div class = "hashtag">
+                    #1
+                </div>   
+                </div>
+                  <div class = "box">
+                <div class = "image">
+                    <img class ="im" src = "images/engineering-svgrepo-com 1.png">
+                </div>
+                <div class="text">
+                    NIRF RANK 5 IN ENGINEERING
+
+
+                </div>
+                <div class = "hashtag">
+                    #5
+                </div>   
+                </div>
+                 <div class = "box">
+                <div class = "image">
+                    <img class ="im" src = "images/india-gate-svgrepo-com 1.png">
+                </div>
+                <div class="text">
+            RANK 14 IN ASIA
+
+
+                </div>
+                <div class = "hashtag">
+                    #14
+                </div>   
+                </div>
+                 <div class = "box2">
+                <div class = "image">
+                    <img class ="im" src = "images/globe-2-svgrepo-com 2.png">
+                </div>
+                <div class="text">
+                    RANK #335 IN QS WORLD RANKINGS
+
+
+                </div>
+                <div class = "hashtag">
+                    #335
+                </div>   
+                </div>
+                
+            </div>
+            <div class = "bottom-compass">
+                IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES
+            </div>
+        </div>
+        <div style="background-color: #99BBD1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 100px;">
+        <div class = "topbar">
+            <div class = "recent">RECENT ACHIEVMENTS</div>
+            <div class = "view">VIEW ALL</div>
+        </div>
+        <div class = "middle-achi">
+            <div class = "arrow"></div>
+            <div class = "box-achi">
+                <div><image class = "im" src =images/b8bb2ad0004cad1460cf6e99e929f7ac81686336.png></image> </div>
+                <div class = "text-achi">
+                    <div class = "top-text">IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge for Solar Innovation</div>
+                    <div class = "bottom-text">IIT Roorkee's Perovskite Innovation Pvt Ltd wins Indian Oil's Start-Up Challenge award, aiming to drive green energy initiatives for a sustainable future. Know details here Perovskite Innovation Pvt Ltd, an Indian</div>
+                </div>
+            </div>
+            <div class = "box-achi">
+                <div><image class = "im" src =images/7d7d8b2c01b21e64075a6d306a0e7248c75fdb4b.png></image> </div>
+                <div class="text-achi">
+                    <div class = "top-text">IIT Roorkee-based startup develops gun-shot detection technology</div>
+                    <div class = "bottom-text">A startup, Linearised Amplifier Technologies and Services (Linear-AmpTech), incubated at iHub DivyaSampark of Indian Institute of Technology (IIT) Roorkee has secured the top spot in the Dare to Dream 4.0 contest</div>
+                </div>
+            </div>
+            <div class = "box-achi">
+                <div><image class = "im" src = "images/760591459a7e288920630c5c73f37bd08a3a2f86.png"></image></div>
+                <div class="text-achi">
+                    <div class = "top-text">IIT Roorkee leads study on Advanced Grid-Scale Energy Storage Technologies</div>
+                    <div class = "bottom-text">This comprehensive study positions IIT Roorkee at the forefront of cutting-edge research, showcasing its dedication to providing India-centric solutions for a sustainable and resilient energy future</div>
+                </div>
+            </div>
+            <div class = "arrow"></div>
+        </div>
+        <div class = "bottom-achi">
+            <span class = "dot black"></span>
+            <span class = "dot grey"></span>
+            <span class = "dot grey"></span>
+            <span class = "dot grey"></span>
+        </div>
+        </div>
+        <div style="
+background-color: black;
+border-radius: 10px;
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;">
+<div style="
+color: white;
+font-size: 36px;
+padding-top: 50px;
+padding-left:30px;
+margin-bottom: 0;
+font-weight: 500;
+">
+    EVENTS GALLERY
+</div>
+<div style="display: flex;">
+<div class = list>
+    <div >
+        THOMSO
+    </div>
+    <div>
+        IITRMS
+    </div>
+    <div>
+        CONVOCATION
+    </div>
+    <div>
+        <button style="
+background-color: yellow;
+border: none;
+border-radius: 5px;
+padding : 5px;
+font-size: 20px;
+
+">
+              COGNIZANCE
+        </button>
+      
+    </div>
+    <div>
+        TEDxIITRoorkee
+    </div>
+    <div>
+        EUNOIA
+    </div>
+    <div>
+        INTER-IIT
+    </div>
+</div>
+<div style="
+margin-left: 100px;
+margin-bottom: 50px;
+margin-top: 40px;">
+    <img src = "images/WhatsApp Image 2024-06-05 at 15.08 1.png" width="1000px">
+</div>
+
+</div>
+
+</div>
+<div  style="
+margin: 100px;">
+
+
+    <div style="display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;">
+        <div style="font-size: 25px;
+        font-weight: bold;">
+            MILESTONES
+        </div>
+        <div  style="font-size: 14px ;">
+            VIEW ALL
+        </div>
+    </div>
+    <div  style="display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;">
+        <div>
+            2018
+        </div>
+        <div>
+            2019
+        </div>
+        <div>
+            2020
+        </div>
+        <div>
+            2021
+        </div>
+        <div>
+            2022
+        </div>
+        <div>
+            2023
+        </div>
+        <div>
+            2024
+        </div>
+    </div>
+    <div style="display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;">
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+
+    </div>
+    <div style = "display: flex;">
+        <div class="arrow-left"></div>
+
+        <div style="margin-left: 100px;">
+             <img src = "images/Group 4351.png">
+        </div>
+        <div style="width: 570px;
+        margin-left: 50px;">
+            <div style = "
+                margin-top: 30px;
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-weight: 600;
+                ">
+                IITR's Architecture Department ranked<span style = "font-size: 36px;
+                font-weight: 700;"><b> 1<sup>st</sup></b></span> among all colleges in India
+            </div>
+            <div style="color : #666666;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px ;">
+                Department of Architecture IIT Roorkee remains unparalleled and has maintained its position as rank #1 int he National Institional Ranking Framework(NIRF) Rankings for 2023. This is the third consecutive time IIT Roorkee has been ranked #1 in NIRF India ranking.
+            </div>
+            <div>
+                <button style="background-color: white;
+                height: 30px;">
+                    READ MORE
+                </button>
+            </div>
+           
+
+        </div>
+    <div class="arrow-right"></div>
+    </div>
+    
+
+</div>
+<div  style = "display: flex;">
+   
+    <div style = "background-color: #e1ecf2;
+    width : 645px;
+    margin-left: 100px;
+    border-radius: 8px;
+    margin-top: 20px;
+    
+    ">
+     <div  style = "display: flex;
+     justify-content: space-between;
+     background-color: white;
+     padding-bottom: 40px;
+     font-size: 20px;
+     font-weight: 900;">
+        <div>
+            NOTICE BOARD
+        </div>
+        <div style ="
+        font-size: 15px;">
+            VIEW ALL
+        </div>
+    </div>
+        <div style = "background-color: #e1ecf2;
+        ;
+        width : 645px;
+        font-size:14px ;
+        padding-bottom: 20px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        padding-top: 20px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;">
+            <div style = "display: flex;
+            justify-content: space-between;"">
+            
+            <div style = "margin-left : 20px;"">
+                Administration
+            </div>
+            <div div style = "margin-right : 20px;">
+                Apr 23,24
+            </div>
+            </div>
+            <div style = "margin-left : 20px;
+            "
+            >
+              <p style = "margin-bottom : 0;">Assitant Registrar General Administration</p> 
+              <p style = "margin-top: 0;">Revised rates of minimum wages for outsourced services -reg</p> 
+            </div>
+            
+        </div>
+        <hr style = "
+        border : none;
+        border-top: 1px solid #c0d1db;
+         margin : 0;
+         padding: 0;
+         width : 600px;
+         margin-left: 20px;
         
+        ">
+        <div style = "background-color: #e1ecf2;
         
+        width : 645px;
+        font-size: 14px;
+        padding-bottom: 20px;
+        padding-top: 20px;">
+            <div style = "display: flex;
+            justify-content: space-between;"">
+            
+            <div style = "margin-left : 20px;"">
+                Administration
+            </div>
+            <div div style = "margin-right : 20px;">
+                Apr 23,24
+            </div>
+            </div>
+            <div style = "margin-left : 20px;
+            "
+            >
+              <p style = "margin-bottom : 0;">Assitant Registrar General Administration</p> 
+              <p style = "margin-top: 0;">Revised rates of minimum wages for outsourced services -reg</p> 
+            </div>
+            
+        </div>
+          <hr style = "
+        border : none;
+        border-top: 1px solid #c0d1db;
+         margin : 0;
+         padding: 0;
+         width : 600px;
+         margin-left: 20px;
         
-     </div>
+        ">
+        <div style = "background-color: #e1ecf2;
+        
+        width : 645px;
+        font-size:14px ;
+        padding-bottom: 20px;
+        padding-top: 20px;">
+            <div style = "display: flex;
+            justify-content: space-between;"">
+            
+            <div style = "margin-left : 20px;"">
+                Administration
+            </div>
+            <div div style = "margin-right : 20px;">
+                Apr 23,24
+            </div>
+            </div>
+            <div style = "margin-left : 20px;
+            "
+            >
+              <p style = "margin-bottom : 0;">Assitant Registrar General Administration</p> 
+              <p style = "margin-top: 0;">Revised rates of minimum wages for outsourced services -reg</p> 
+            </div>
+            
+        </div>
+          <hr style = "
+        border : none;
+        border-top: 1px solid #c0d1db;
+         margin : 0;
+         padding: 0;
+         width : 600px;
+         margin-left: 20px;
+        
+        ">
+        <div style = "background-color: #e1ecf2;
+        
+        width : 645px;
+        font-size: 14px;
+        padding-bottom: 20px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding-top: 20px;">   
+            <div style = "display: flex;
+            justify-content: space-between;"">
+            
+            <div style = "margin-left : 20px;"">
+                Administration
+            </div>
+            <div div style = "margin-right : 20px;">
+                Apr 23,24
+            </div>
+            </div>
+            <div style = "margin-left : 20px;
+            "
+            >
+              <p style = "margin-bottom : 0;">Assitant Registrar General Administration</p> 
+              <p style = "margin-top: 0;">Revised rates of minimum wages for outsourced services -reg</p> 
+            </div>
+            
+        </div>
+    </div>
+    <div style = "background-color: white;
+    width : 645px;
+    margin-left: 80px;
+    border-radius: 8px;
+    margin-right: 100px;
+    ">
+     <div  style = "display: flex;
+     justify-content: space-between;
+     background-color: white;
+     padding-bottom: 40px;
+     font-size: 20px;
+     font-weight: 900;
+     margin-top: 20px;">
+        <div>
+            UPCOMING EVENTS
+        </div>
+        <div style ="
+        font-size: 15px;">
+            VIEW ALL
+        </div>
+    </div>
+        <div style = "background-color: white;
+        ;
+        width : 645px;
+        font-size:14px ;
+        padding-bottom: 20px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        padding-top: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: flex;
+        height : 90px;">
+            <div class="image-container">
+  <img src="images/Rectangle 296 (1).png" class="bg-image">
+  <img src="images/23 Sept (1).png" class="overlay-image">
+</div>
+           <div>
+             <div style = "
+             margin-top: 20px;">
+            IDEAS-2024
+           </div>
+           <div style = "
+           margin-top: 10px;
+           font-size: 18px;">
+            International Symposium Innovative Design for Excellance, Affordability and Sustainability
+           </div>
+           </div>
+          
+            
+        </div>
+        <hr style = "
+        border : none;
+        border-top: 1px solid yellow;
+         margin : 0;
+         padding: 0;
+         width : 600px;
+         margin-left: 20px;
+        
+        ">
+        <div style = "background-color: white;
+        ;
+        width : 645px;
+        font-size:14px ;
+        padding-bottom: 20px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        padding-top: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: flex;
+        height : 90px;">
+         <div class="image-container">
+  <img src="images/Rectangle 296 (1).png" class="bg-image">
+  <img src="images/23.png" class="overlay-image">
+</div>
+           <div>
+             <div style = "
+             margin-top: 20px;">
+            Inaugral Lecture
+           </div>
+           <div style = "
+           margin-top: 10px;
+           font-size: 18px;">
+            Prof. Shankar Lal Memorial Lecture Series
+           </div>
+           </div>
+      
+            
+        </div>
+          <hr style = "
+        border : none;
+        border-top: 1px solid yellow;
+         margin : 0;
+         padding: 0;
+         width : 600px;
+         margin-left: 20px;
+        
+        ">
+       
+         
+    </div>
+   
+</div>
+           
     
     </body>
 </html>

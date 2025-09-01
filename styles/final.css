@@ -1,0 +1,66 @@
+body{
+    background-color:black;
+}
+.final-top{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: black;
+}
+.final-bottom{
+     display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.final-bottom-bottom{
+    color: white;
+    
+     display: flex;
+     justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.Phone-number{
+    color: white;
+    margin-top: 50px;
+    font-size: 24px;
+
+
+}
+.Phone-number div{
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.final-top div{
+
+    margin-right: 40px;
+}
+.final-top-box{
+    margin-top: 60px;
+    color: white;
+    
+    
+}
+.final-heading{
+    margin-bottom: 40px;
+}
+.final-text div{
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-size: 19px;
+}
+
+.arrow-up-right {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
